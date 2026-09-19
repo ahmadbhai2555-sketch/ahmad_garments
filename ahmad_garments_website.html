@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmad Garments | Premium Suits</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;background:#f7f7f7;color:#222;line-height:1.6}
+header{background:#111;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.logo{font-size:26px;font-weight:800;color:#d4af37}
+nav a{color:white;text-decoration:none;margin-left:24px;font-weight:600}
+nav a:hover{color:#d4af37}
+.hero{min-height:520px;display:flex;align-items:center;padding:70px 7%;background:linear-gradient(120deg,#111 0%,#292929 55%,#5b4712 100%);color:white}
+.hero-text{max-width:650px}
+.hero h1{font-size:58px;margin-bottom:15px}
+.hero h1 span{color:#d4af37}
+.hero p{font-size:20px;color:#ddd;margin-bottom:28px}
+.btn{display:inline-block;background:#d4af37;color:#111;padding:13px 25px;border-radius:7px;text-decoration:none;font-weight:800}
+section{padding:65px 7%}
+.title{text-align:center;margin-bottom:35px}
+.title h2{font-size:36px}
+.title p{color:#666}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 6px 20px #00000012}
+.card .photo{height:230px;background:linear-gradient(135deg,#e7e0d2,#9a8a68);display:flex;align-items:center;justify-content:center;font-size:55px}
+.card:nth-child(2) .photo{background:linear-gradient(135deg,#dfe5e9,#3e4b54)}
+.card:nth-child(3) .photo{background:linear-gradient(135deg,#ead9d0,#68433a)}
+.card-content{padding:20px}
+.card h3{font-size:22px;margin-bottom:7px}
+.price{color:#9b7814;font-weight:800;font-size:20px;margin:10px 0}
+.offer{background:#111;color:white;border-radius:15px;padding:35px;text-align:center}
+.offer h2{font-size:34px;color:#d4af37}
+.offer p{margin:10px 0 22px;color:#ddd}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
+.feature{background:white;padding:28px;border-radius:12px}
+.feature .icon{font-size:35px}
+.contact{background:#eee}
+.contact-box{max-width:700px;margin:auto;background:white;padding:30px;border-radius:14px}
+input,textarea{width:100%;padding:13px;margin:8px 0;border:1px solid #ddd;border-radius:7px;font-size:15px}
+textarea{height:120px;resize:vertical}
+button{border:0;cursor:pointer}
+footer{background:#111;color:#ccc;text-align:center;padding:25px}
+footer strong{color:#d4af37}
+@media(max-width:800px){
+nav{display:none}.hero h1{font-size:42px}.products,.features{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AHMAD GARMENTS</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#suits">Suits</a>
+    <a href="#offers">Offers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-text">
+    <h1>Style That <span>Speaks</span></h1>
+    <p>Discover quality suits, beautiful designs and excellent variety at Ahmad Garments.</p>
+    <a class="btn" href="#suits">Explore Suits</a>
+  </div>
+</section>
+
+<section id="suits">
+  <div class="title">
+    <h2>Our Suit Collection</h2>
+    <p>Choose your favorite style and quality.</p>
+  </div>
+  <div class="products">
+    <div class="card">
+      <div class="photo">👔</div>
+      <div class="card-content">
+        <h3>Premium Latha Suit</h3>
+        <p>Elegant fabric with a stylish finish.</p>
+        <div class="price">Rs. 1,600</div>
+        <a class="btn" href="#contact">Order Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="photo">🧥</div>
+      <div class="card-content">
+        <h3>Classic Collection</h3>
+        <p>Comfortable and suitable for everyday wear.</p>
+        <div class="price">Rs. 1,500</div>
+        <a class="btn" href="#contact">Order Now</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="photo">✨</div>
+      <div class="card-content">
+        <h3>Special Design</h3>
+        <p>Modern look for special occasions.</p>
+        <div class="price">Rs. 1,600</div>
+        <a class="btn" href="#contact">Order Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="offers">
+  <div class="offer">
+    <h2>Special Offer 🎉</h2>
+    <p>Get amazing variety and quality at affordable prices.</p>
+    <a class="btn" href="#contact">Ask About Offers</a>
+  </div>
+</section>
+
+<section>
+  <div class="title">
+    <h2>Why Ahmad Garments?</h2>
+  </div>
+  <div class="features">
+    <div class="feature"><div class="icon">⭐</div><h3>Good Quality</h3><p>Carefully selected fabrics and designs.</p></div>
+    <div class="feature"><div class="icon">👕</div><h3>Great Variety</h3><p>Different styles and suit varieties.</p></div>
+    <div class="feature"><div class="icon">💰</div><h3>Best Prices</h3><p>Quality products at reasonable prices.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="title">
+    <h2>Contact Ahmad Garments</h2>
+    <p>Send us your requirement.</p>
+  </div>
+  <div class="contact-box">
+    <input type="text" placeholder="Your Name">
+    <input type="tel" placeholder="Phone Number">
+    <textarea placeholder="Which suit are you interested in?"></textarea>
+    <button class="btn" onclick="alert('Thank you! Please add your WhatsApp number to connect orders.')">Send Message</button>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <strong>Ahmad Garments</strong> — All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
