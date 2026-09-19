@@ -131,7 +131,7 @@ nav{display:none}.hero h1{font-size:42px}.products,.features{grid-template-colum
     <input type="text" placeholder="Your Name">
     <input type="tel" placeholder="Phone Number">
     <textarea placeholder="Which suit are you interested in?"></textarea>
-    <button class="btn" onclick="sebOrder()">Send Message</button>
+    <button class="btn" onclick="sendOrder()">Send Message</button>
   </div>
 </section>
 
@@ -139,9 +139,67 @@ nav{display:none}.hero h1{font-size:42px}.products,.features{grid-template-colum
   <p>© 2026 <strong>Ahmad Garments</strong> — All Rights Reserved.</p>
 </footer>
 <script>
+<script>
 function sendOrder() {
-    alert("Thank you for contacting Ahmad Garments!");
+    const name = document.querySelector('input[type="text"]').value;
+    const phone = document.querySelector('input[type="tel"]').value;
+    const message = document.querySelector('textarea').value;
+
+    const whatsappNumber = "923036246262";
+
+    const text =
+        "New Order - Ahmad Garments\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Suit/Message: " + message;
+
+    window.open(
+        "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text),
+        "_blank"
+    );
 }
+</script> 
+  <script>
+function sendOrder() {
+    const name = document.querySelector('input[type="text"]').value;
+    const phone = document.querySelector('input[type="tel"]').value;
+    const message = document.querySelector('textarea').value;
+
+    const whatsappNumber = "923036246262";
+
+    const text =
+        "New Order - Ahmad Garments\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Suit/Message: " + message;
+
+    window.open(
+        "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text),
+        "_blank"
+    );
+}
+</script>
+<script>
+function sendOrder() {
+    const name = document.querySelector('input[type="text"]').value;
+    const phone = document.querySelector('input[type="tel"]').value;
+    const message = document.querySelector('textarea').value;
+
+    const whatsappNumber = "923036246262";
+
+    const text =
+        "New Order - Ahmad Garments\n" +
+        "Name: " + name + "\n" +
+        "Phone: " + phone + "\n" +
+        "Suit/Message: " + message;
+
+    window.open(
+        "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(text),
+        "_blank"
+    );
+}
+</script>
+
 </script>
 </body>
 </html>
